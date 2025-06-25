@@ -1,0 +1,108 @@
+body {
+  background: #f4f6fb;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+h1 {
+  text-align: center;
+  color: #2d3a4b;
+  margin-bottom: 8px;
+}
+.password-box {
+  display: flex;
+  gap: 8px;
+}
+#password {
+  flex: 1;
+  font-size: 1.2em;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #f9fafb;
+  letter-spacing: 0.1em;
+}
+#copyBtn {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#copyBtn:hover {
+  background: #2563eb;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#length {
+  width: 100%;
+}
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.checkboxes label {
+  font-size: 0.98em;
+}
+#generateBtn {
+  background: #8b5cf6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.10);
+}
+#generateBtn:hover {
+  background: #facc15;
+  box-shadow: 0 4px 16px rgba(250, 204, 21, 0.18);
+}
+#generateBtn:active {
+  background: #eab308;
+  box-shadow: 0 2px 8px rgba(250, 204, 21, 0.22);
+}
+.strength {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+.bar {
+  width: 80px;
+  height: 10px;
+  border-radius: 5px;
+  background: #e5e7eb;
+  transition: background 0.3s;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 98vw;
+    padding: 18px 4vw 18px 4vw;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  #password {
+    font-size: 1em;
+  }
+} 
